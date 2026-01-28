@@ -1,0 +1,54 @@
+.container-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e5e5e5;
+}
+.imagem-principal{
+    width: 280px;
+    height: 290px;  
+    position: relative;
+    z-index: 1;
+    right: 17%;
+}
+.conteudo{
+    position: absolute;
+    width: 655px;
+    height: 350px;
+    background-color: #fff;
+    padding: 60px 40px 60px 230px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conteudo .titulo{
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+    font-weight: 900;
+}
+.conteudo .tituloPergunta{
+    font-size: 1.7rem;
+    padding: 20px 0px 20px 0px;
+}
+
+.conteudo .txtResposta{
+    font-size: 1.5rem;
+    display: none;
+    padding-bottom: 10px;
+}
+.pergunta{
+    position: relative;
+}
+.imagem-seta{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+
+    width: 15px;
+}
+.txtResposta.mostrar{
+    display: block;
+}
