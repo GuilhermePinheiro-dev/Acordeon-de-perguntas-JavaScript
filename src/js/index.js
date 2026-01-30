@@ -1,10 +1,15 @@
 const setaDaPergunta = document.querySelectorAll(".item")
-const txtDaResposta = document.querySelectorAll(".resposta")
 
-setaDaPergunta.forEach((seta, i) => {
+setaDaPergunta.forEach((seta) => {
+  
     seta.addEventListener("click", function(){
-        txtDaResposta[i].classList.toggle("ativo")
-        setaDaPergunta[i].classList.toggle("ativo")
+        const itemAtivo = document.querySelector(".ativo");
+
+        seta.classList.add("ativo");
+
+        if(itemAtivo){
+            itemAtivo.classList.remove("ativo");
+        }
+        
     })
-}
-)
+})
